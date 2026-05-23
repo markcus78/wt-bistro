@@ -1,17 +1,19 @@
-# Aiutalo a Smettere — sito
+# WT Bistro — sito
 
-Landing + quiz del programma **Aiutalo a Smettere** di [Wellness Town](https://wellnesstown.it).
+Landing page del **WT Bistro**, il bar di [Wellness Town](https://wellnesstown.it) (Roma EUR).
 
-🌐 **Live**: https://aiutaloasmettere.wellnesstown.it
+🌐 **Live**: https://bistro.wellnesstown.it
+
+## Cos'è
+
+Landing one-page che racconta il cambio di direzione del WT Bistro:
+cibo onesto e artigianale, menu organizzato sui 4 momenti del cliente (mattino · pranzo · post-allenamento · aperitivo), e il programma **Allunga il tuo abbonamento** — ogni 10 € spesi al Bistro regalano 1 giorno di palestra in più agli iscritti WT.
 
 ## Stack
 
 - Vite 5 + React 18 + TypeScript
-- React Router (BrowserRouter) — rotte: `/`, `/quiz`, `/grazie`
-- TailwindCSS + shadcn/ui
-- Form submission via Zapier webhook
+- TailwindCSS v3 + shadcn/ui
 - Hosting: GitHub Pages (deploy automatico via GitHub Actions)
-- Tracking: Meta Pixel (`PageView` + `Lead`)
 
 ## Comandi
 
@@ -25,14 +27,25 @@ npm run preview # serve il dist/ localmente
 ## Struttura
 
 - `src/pages/Index.tsx` — landing page (homepage)
-- `src/pages/Quiz.tsx` — quiz "Che divanizzato sei?"
-- `src/pages/Grazie.tsx` — thank-you post-candidatura
-- `src/components/ApplicationForm.tsx` — form unico riusato da landing e quiz
-- `src/components/landing/` — sezioni della landing (Hero, WhatItIs, Filter, Phases, Value, Testimonials, About, Faq, FormSection)
-- `public/` — asset statici (foto, logo, favicon, CNAME, 404.html)
+- `src/components/landing/` — sezioni della landing
+  - `Hero.tsx` — hero con brand, payoff, 2 valori, due foto
+  - `Allunga.tsx` — programma loyalty in evidenza
+  - `Manifesto.tsx` — il cambio di direzione, 2 frasi
+  - `QuattroMomenti.tsx` — card per Mattino · Pranzo · Post-allenamento · Aperitivo
+  - `Menu.tsx` — menu completo in accordion espandibile
+  - `Valori.tsx` — i 5 valori del Bistro
+  - `DoveQuando.tsx` — indirizzo, orari per fascia, mappa Google
+  - `Footer.tsx` — footer
+- `public/` — asset statici (foto piatti, logo WT, favicon, CNAME, 404.html)
 
 ## Deploy
 
 Push sul branch `main` → GitHub Actions builda → deploy su GitHub Pages → live in ~1-2 minuti.
 
 Workflow: `.github/workflows/deploy.yml`.
+
+## Dominio
+
+- **Dominio custom**: `bistro.wellnesstown.it`
+- **DNS**: gestito su Register.it (CNAME `bistro → markcus78.github.io`)
+- **HTTPS**: gestito automaticamente da GitHub Pages (Let's Encrypt)
