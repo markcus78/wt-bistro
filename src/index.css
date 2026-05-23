@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Design system — "WT Bistro"
+   Palette ispirata al poster: bianco caldo, legno chiaro, accent verde naturale, accent warm terracotta.
+   Tutti i colori in HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 38 38% 96%;          /* cream warm #FAF6EF */
+    --foreground: 18 14% 16%;          /* ink scuro caldo */
+
+    --card: 0 0% 100%;
+    --card-foreground: 18 14% 16%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 18 14% 16%;
+
+    --primary: 138 26% 39%;            /* verde naturale #4a7c59 */
+    --primary-foreground: 38 38% 97%;
+
+    --secondary: 38 32% 90%;           /* legno chiaro #f3ece1 */
+    --secondary-foreground: 18 14% 16%;
+
+    --muted: 38 22% 88%;
+    --muted-foreground: 18 10% 38%;    /* ink-soft */
+
+    --accent: 18 53% 55%;              /* terracotta warm #c97b4e */
+    --accent-foreground: 38 38% 97%;
+
+    --destructive: 0 75% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 36 27% 80%;              /* linea sottile #d8cdbe */
+    --input: 36 27% 80%;
+    --ring: 138 26% 39%;
+
+    --radius: 0.5rem;
+
+    --cream: 38 38% 96%;
+    --cream-alt: 38 32% 90%;
+    --wood: 28 32% 50%;
+    --ink-soft: 18 10% 38%;
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  html { scroll-behavior: smooth; }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-feature-settings: "ss01", "cv11";
+  }
+  h1, h2, h3, h4 { font-family: 'Inter', system-ui, sans-serif; font-weight: 800; letter-spacing: -0.02em; }
+}
+
+@layer components {
+  .font-display { font-family: 'Caveat', cursive; font-weight: 700; }
+  .text-ink-soft { color: hsl(var(--ink-soft)); }
+  .bg-cream { background: hsl(var(--cream)); }
+  .bg-cream-alt { background: hsl(var(--cream-alt)); }
+
+  .container-wt {
+    @apply mx-auto px-5 sm:px-8 lg:px-12 max-w-6xl;
+  }
+
+  .section-title {
+    @apply text-3xl sm:text-4xl font-extrabold tracking-tight text-foreground;
+  }
+
+  .section-eyebrow {
+    @apply font-display text-2xl text-primary;
+  }
+}
