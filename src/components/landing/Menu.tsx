@@ -33,7 +33,7 @@ const sezioni: { titolo: string; emoji: string; items: Item[] }[] = [
       { nome: "Pizza Margherita", desc: "impasto integrale, pomodoro, mozzarella, basilico", prezzo: "9,00 €", tag: "veg" },
       { nome: "Pizza Pollo & Veg", desc: "pomodoro, mozzarella, pollo grigliato, zucchine, rucola", prezzo: "11,00 €" },
       { nome: "Pizza Bresaola & Grana", desc: "pomodoro, mozzarella, bresaola, grana, rucola", prezzo: "12,00 €" },
-      { nome: "Pizza del giorno", desc: "vedi lavagna al banco", prezzo: "10,00 €", tag: "ruota" },
+      { nome: "Pizza del giorno", desc: "vedi lavagna al WT Bistro", prezzo: "10,00 €", tag: "ruota" },
       { nome: "Piatto del giorno", desc: "vellutate d'inverno, gazpacho e zuppe fredde d'estate", prezzo: "9,00 €", tag: "ruota" },
     ],
   },
@@ -104,7 +104,7 @@ const Menu = () => {
       <div className="container-wt max-w-4xl">
         <div className="text-center mb-8 sm:mb-10">
           <div className="section-eyebrow mb-1 text-xl sm:text-2xl">il menu completo</div>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight">Cosa trovi al banco</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight">Cosa trovi al WT Bistro</h2>
           <p className="text-sm sm:text-base text-ink-soft mt-2 max-w-xl mx-auto">Apri ogni sezione per voci, ingredienti e prezzi.</p>
         </div>
 
@@ -141,7 +141,7 @@ const Menu = () => {
         </Accordion>
 
         <div className="text-center mt-6 sm:mt-8 text-[11px] sm:text-xs text-ink-soft">
-          Pane prodotto internamente con farina a basso indice glicemico. Allergeni e dettagli al banco.
+          Pane prodotto internamente con farina a basso indice glicemico. Allergeni e dettagli al WT Bistro.
         </div>
       </div>
     </section>

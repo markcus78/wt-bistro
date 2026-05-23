@@ -9,7 +9,7 @@ const DoveQuando = () => {
             <strong>Wellness Town</strong> · Via Francesco Giangiacomo 55 · Roma EUR
           </p>
           <p className="text-sm sm:text-base text-ink-soft mb-4 sm:mb-5">
-            Il banco del WT Bistro è nel corridoio prima dei tornelli — passi dal Bistro entrando e uscendo dalla palestra.
+            Il WT Bistro è nel corridoio prima dei tornelli — ci passi entrando e uscendo dalla palestra.
           </p>
           <div className="bg-card rounded-xl border border-border p-4 sm:p-5 space-y-2 sm:space-y-3">
             <div className="flex justify-between text-xs sm:text-sm">
@@ -30,7 +30,7 @@ const DoveQuando = () => {
             </div>
           </div>
           <p className="mt-4 sm:mt-5 text-xs sm:text-sm text-ink-soft">
-            Wi-Fi gratuito al banco. Pagamento alla cassa.
+            Wi-Fi gratuito al WT Bistro. Pagamento alla cassa.
             Riconoscimento iscritti con tessera o QR per applicare lo sconto e tracciare Allunga.
           </p>
         </div>
