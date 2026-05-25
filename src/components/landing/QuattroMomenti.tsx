@@ -13,8 +13,8 @@ const momenti = [
     nome: "Pranzo",
     orario: "12 – 15",
     img: "/pranzo.jpg",
-    desc: "Poke, insalate, pizze impasto integrale, wrap. Piatto e Pizza del giorno ruotano con la stagione.",
-    voci: ["Poke Salmone / Pollo / Tonno / Veg", "Caesar · Salmon · Bresaola Bowl", "Pizze integrali", "Piatto del giorno"],
+    desc: "Poke, insalate, pizze impasto integrale, wrap. Menu fisso, ingredienti veri.",
+    voci: ["Poke Salmone / Pollo / Tonno / Veg", "Caesar · Salmon · Bresaola Bowl", "Caprese Bowl · Wrap", "3 Pizze integrali"],
     range: "da 9,00 € a 13,50 €",
   },
   {

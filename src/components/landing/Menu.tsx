@@ -33,8 +33,6 @@ const sezioni: { titolo: string; emoji: string; items: Item[] }[] = [
       { nome: "Pizza Margherita", desc: "impasto integrale, pomodoro, mozzarella, basilico", prezzo: "9,00 €", tag: "veg" },
       { nome: "Pizza Pollo & Veg", desc: "pomodoro, mozzarella, pollo grigliato, zucchine, rucola", prezzo: "11,00 €" },
       { nome: "Pizza Bresaola & Grana", desc: "pomodoro, mozzarella, bresaola, grana, rucola", prezzo: "12,00 €" },
-      { nome: "Pizza del giorno", desc: "vedi lavagna al WT Bistro", prezzo: "10,00 €", tag: "ruota" },
-      { nome: "Piatto del giorno", desc: "vellutate d'inverno, gazpacho e zuppe fredde d'estate", prezzo: "9,00 €", tag: "ruota" },
     ],
   },
   {
@@ -52,7 +50,7 @@ const sezioni: { titolo: string; emoji: string; items: Item[] }[] = [
       { nome: "Tramezzino Bresaola & Rucola", desc: "pane integrale morbido di casa", prezzo: "5,50 €" },
       { nome: "Tramezzino Salmone & Avocado", desc: "pane integrale morbido di casa", prezzo: "7,00 €" },
       { nome: "Hummus & Crudités", desc: "hummus, carote, sedano, cetriolo", prezzo: "5,50 €", tag: "veg" },
-      { nome: "Quadrato di Pizza", desc: "trancetto della pizza del giorno", prezzo: "2,50 €" },
+      { nome: "Quadrato di Pizza", desc: "trancetto da una delle pizze in cottura", prezzo: "2,50 €" },
       { nome: "Macedonia di stagione", desc: "frutta a cubetti tagliata al momento", prezzo: "5,00 €", tag: "veg" },
       { nome: "Sorbetto alla frutta", desc: "limone o frutti rossi", prezzo: "4,00 €", tag: "estate" },
       { nome: "Yogurt gelato", desc: "+ topping a scelta", prezzo: "5,00 €", tag: "estate" },
@@ -66,7 +64,7 @@ const sezioni: { titolo: string; emoji: string; items: Item[] }[] = [
     titolo: "Aperitivo serale",
     emoji: "🍷",
     items: [
-      { nome: "Pizza al taglio", desc: "trancio della pizza del giorno", prezzo: "4,00 €" },
+      { nome: "Pizza al taglio", desc: "trancio da una delle pizze del menu", prezzo: "4,00 €" },
       { nome: "Tagliere misto", desc: "bresaola, prosciutto crudo, grana, olive, crostini · per 2", prezzo: "12,00 €" },
       { nome: "Spritz Aperol", prezzo: "6,00 €" },
       { nome: "Hugo", prezzo: "6,00 €" },
