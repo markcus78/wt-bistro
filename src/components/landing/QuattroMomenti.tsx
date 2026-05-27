@@ -44,7 +44,7 @@ const QuattroMomenti = () => {
         <div className="text-center mb-8 sm:mb-10">
           <div className="section-eyebrow mb-1 text-xl sm:text-2xl">tutto il giorno</div>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-foreground">Quattro momenti, una casa</h2>
-          <p className="text-sm sm:text-base text-ink-soft mt-2 max-w-xl mx-auto">Lo stesso Bistro cambia ritmo durante la giornata.</p>
+          <p className="text-sm sm:text-base text-ink-soft mt-2 max-w-xl mx-auto">Lo stesso Bistro cambia ritmo durante la giornata. Tutte le voci sono <strong>anche da portar via</strong>.</p>
         </div>
         <div className="grid sm:grid-cols-2 gap-3 sm:gap-5 lg:gap-7">
           {momenti.map((m) => (

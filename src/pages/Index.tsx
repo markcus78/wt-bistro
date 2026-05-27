@@ -1,5 +1,6 @@
 import Hero from "@/components/landing/Hero";
 import Manifesto from "@/components/landing/Manifesto";
+import Veloce from "@/components/landing/Veloce";
 import QuattroMomenti from "@/components/landing/QuattroMomenti";
 import Allunga from "@/components/landing/Allunga";
 import Menu from "@/components/landing/Menu";
@@ -13,6 +14,7 @@ const Index = () => {
       <Hero />
       <Allunga />
       <Manifesto />
+      <Veloce />
       <QuattroMomenti />
       <Menu />
       <Valori />

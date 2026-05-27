@@ -9,7 +9,8 @@ const Manifesto = () => {
         </p>
         <p className="text-base sm:text-lg lg:text-xl text-ink-soft leading-relaxed mt-4 sm:mt-5">
           Coerente con il motivo per cui sei venuto qui:
-          allenarti, e <em>stare bene</em> anche quando mangi.
+          allenarti, e <em>stare bene</em> anche quando mangi —
+          che tu abbia 3 minuti o un'ora.
         </p>
       </div>
     </section>

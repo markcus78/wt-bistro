@@ -1,6 +1,6 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
-type Item = { nome: string; desc?: string; prezzo: string; tag?: "veg" | "novità" | "estate" | "ruota" };
+type Item = { nome: string; desc?: string; prezzo: string; tag?: "veg" | "novità" | "estate" | "ruota" | "gf" };
 
 const sezioni: { titolo: string; emoji: string; items: Item[] }[] = [
   {
@@ -94,6 +94,7 @@ const tagStyle: Record<string, string> = {
   "novità": "bg-accent text-accent-foreground",
   estate: "bg-accent/10 text-accent border border-accent/30",
   ruota: "bg-secondary text-foreground border border-border",
+  gf: "bg-foreground/10 text-foreground border border-foreground/20",
 };
 
 const Menu = () => {
@@ -138,8 +139,16 @@ const Menu = () => {
           ))}
         </Accordion>
 
-        <div className="text-center mt-6 sm:mt-8 text-[11px] sm:text-xs text-ink-soft">
-          Pane prodotto internamente con farina a basso indice glicemico. Allergeni e dettagli al WT Bistro.
+        <div className="mt-6 sm:mt-8 bg-card border border-border rounded-xl p-4 sm:p-5">
+          <div className="text-xs sm:text-sm font-bold uppercase tracking-wider text-primary mb-1.5">Per chi ha intolleranze</div>
+          <p className="text-xs sm:text-sm text-foreground leading-relaxed">
+            <strong>Latte senza lattosio</strong> disponibile in caffetteria, accanto a quello d'avena.
+            Stiamo lavorando per ampliare le opzioni — per dettagli su allergeni e ingredienti chiedi al banco.
+          </p>
+        </div>
+
+        <div className="text-center mt-5 sm:mt-6 text-[11px] sm:text-xs text-ink-soft">
+          Pane prodotto internamente con farina a basso indice glicemico. Tutte le voci del menu sono disponibili anche da portar via.
         </div>
       </div>
     </section>

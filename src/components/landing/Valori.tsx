@@ -2,7 +2,7 @@ const valori = [
   { titolo: "Coerenza", desc: "quello che servo è in linea con la persona che stai diventando." },
   { titolo: "Onestà", desc: "ingredienti veri, niente super food miracolosi. Se è semplice te lo dico." },
   { titolo: "Accessibilità", desc: "non snob, non hardcore-protein. Entri, leggi e capisci." },
-  { titolo: "Cura", desc: "del corpo, del tempo, dello spazio. 5-7 minuti dall'ordine al piatto." },
+  { titolo: "Velocità", desc: "chi ha 3 minuti si serve in 3 minuti. Take-away o seduto, decidi tu." },
   { titolo: "Comunità", desc: "il posto degli iscritti. Lo staff ti riconosce, sa cosa prendi di solito." },
 ];
 
